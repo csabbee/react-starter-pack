@@ -20,7 +20,7 @@ gulp.task('browserSync', function (done) {
         notify: false,
         middleware: [
             function(req, res, next) {
-                if (/^(.*\.(?!(htm|html|css|js|ico)$))?[^.]*$/.test(req.url) && req.url !== '/') {
+                if (/^(.*\.(?!(htm|html|css|js|ico|map)$))?[^.]*$/.test(req.url) && req.url !== '/') {
                     // logInfo(req.url);
                     res.writeHead(302, {
                         'Location': '/'
