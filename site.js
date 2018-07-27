@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { UIRouter, UIView, UISref, UISrefActive, pushStateLocationPlugin } from '@uirouter/react';
+
 import Component from './component';
 import configureStore from './src/reducers/configure-store';
 const store = configureStore();
